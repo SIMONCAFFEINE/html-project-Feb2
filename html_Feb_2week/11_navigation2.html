@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>내비게이션 세로 쌓기 실습</title>
+		<style>
+			body {
+				padding-top:30px;
+				padding-left:50px;
+			}
+			ul:first-child {
+				margin-bottom : 50px;
+			}
+			
+			.stacked { 
+				width:300px;
+			}
+		</style>
+		<link href="css/bootstrap.min.css" rel="stylesheet">		
+	</head>
+	<body>
+		<!--stacked 클래스를 추가하여 각 항목 너비를 style에서 설정함.-->
+		<div class="stacked">
+			<!--.nav스타일과 .nav-stacked스타일을 함께 사용해서 네비게이션 항목을 세로로 쌓는다.-->
+			<!--nav nav-tabs-->
+			<!--nav nav-pills-->
+			<!--nav nav-stacked-->
+			<ul class="nav nav-pills nav-stacked">
+				<li class="active"><a href="#">공지사항</a></li>
+				<li><a href="#">도서 목록</a></li>
+				<li><a href="#">게시판</a></li>
+			</ul>	
+		</div>
+		<!-- [if lt IE 9]>
+			<script src="html5shiv/html5shiv.min.js">
+			<script src="respond/respond.min.js">
+		<![endif]-->
+  </body>
+</html>

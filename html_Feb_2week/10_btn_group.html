@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>버튼 그룹 유형 실습</title>
+	<style>
+		body {
+			padding-top:30px;
+			padding-left:50px;
+		}
+	</style>
+    <!-- 부트스트랩 css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+		
+  </head>
+  <body>
+	  	<!--btn-group-vertical스타일을 사용해서 버튼 그룹이 세로로 표시되었다.-->
+		<!--가로로 표시하고 싶다면 btn-group만 입력한다S-->
+		<div class="btn-group-vertical">
+			<button type="button" class="btn btn-default">공지사항</button>
+			<div class="btn-group">
+				<button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+					도서 목록 
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Do it! 시리즈</a></li>
+					<li><a href="#">업무 능력 필독서</a></li>					
+					<li><a href="#">바빠 학습법 시리즈</a></li>
+				</ul>				
+			</div>			
+				<button type="button" class="btn btn-default" data-toggle="dropdown">
+					게시판
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu">
+					<li><a href="#">Do it! 시리즈</a></li>
+					<li><a href="#">업무 능력 필독서</a></li>					
+					<li><a href="#">바빠 학습법 시리즈</a></li>
+				</ul>	
+		</div>
+    <!-- jQuery 포함 -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <!-- 부트스트랩 플러그인 포함 -->
+    <script src="js/bootstrap.min.js"></script> 
+		
+	<!-- HTML5와 미디어쿼리를 지원하지 않는 IE8 이하 버전을 위해 -->
+	<!-- [if lt IE 9]>
+		<script src="html5shiv/html5shiv.min.js">
+		<script src="respond/respond.min.js">
+	<![endif]-->
+  </body>
+</html>
+
+<!--div를 안쓰고도 목록을 추가할 수 있다.-->

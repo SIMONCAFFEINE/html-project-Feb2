@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<!--경로지정할 때 주목! ../images8_pr/dark-bg.jpg로 등록해야함 =-->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>고스트버튼</title>
+		<!--style안에 button padding의미는? = 버튼 크기 설정해주는 거!-->
+		<style>
+			* {
+				margin:0;
+				padding:0
+			}
+			body {
+				background:url('../images8_pr/dark-bg.jpg') no-repeat center fixed;
+				background-size:cover;
+				text-align:center;
+			}		
+			div {
+				width:100%;				
+				bottom:50px;
+				position:absolute;
+			}
+			.ghost-button{
+				display:inline-block;
+				position:relative;
+				padding:20px 40px;
+				margin:50px 20px;
+				border:2px solid #fff;
+				border-radius:10px;
+				color:#fff;
+				text-align:center;
+				text-decoration:none;	
+				transition:0.3s;			
+			}
+			.ghost-button:hover {
+				background-color:#fff;
+				color:black;
+			}			
+		</style>
+		
+		<!--[if lt IE 9]>
+		  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->		
+	</head>
+	<body>
+		<!--버튼 테두리는 padding과 margin을 적절히 활용해 원하는 크기만큼 만들면 된다-->
+		<div>
+			<!--target="_blank"위치는 href바로 옆에 써야 동작이 된다!-->
+			<a href="http://designbase.co.kr/webcoding-6/" target="_blank" class="ghost-button">Download</a>
+			<a href="#" class="ghost-button"> Live Demo</a>
+		</div>	
+		
+		<!--버튼 위에 마우스 포인터를 올려놓으면 배경은 흰색으로, 글자색은 검정으로 바뀐다.-->
+		<!--.ghost-button:hover를 그래서 style위에 지정해 둔거다!-->
+	</body>
+</html>
